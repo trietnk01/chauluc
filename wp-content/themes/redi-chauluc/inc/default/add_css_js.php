@@ -54,6 +54,10 @@ if(!function_exists('p_load_css_js')){
         wp_enqueue_script('ddsmoothmenu_js',P_LIB . '/ddsmoothmenu/js/ddsmoothmenu.js',array('jquery'),@$js_css_ran,false);
         wp_enqueue_style('ddsmoothmenu_css', P_LIB . '/ddsmoothmenu/css/ddsmoothmenu.css',array(),@$js_css_ran,'all'); 
         // end ddsmoothmenu
+        // start select2
+        wp_enqueue_script('select2_js',P_LIB . '/select2/select2.min.js',array('jquery'),@$js_css_ran,true);
+        wp_enqueue_style('select2_css', P_LIB . '/select2/select2.min.css',array(),@$js_css_ran,'all'); 
+        // end select2
         // begin matchHeight-min
         wp_enqueue_script('jquery.matchHeight-min',P_LIB . '/jquery/jquery.matchHeight-min.js',array('jquery'),@$js_css_ran,true);
         // end matchHeight-min

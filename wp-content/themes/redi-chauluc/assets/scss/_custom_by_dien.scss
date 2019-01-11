@@ -368,3 +368,130 @@
 .who-we-are-excerpt{
 	margin-top: 20px;
 }
+.saling-schedule{
+	padding:20px;
+	background-color:#f6f6f6;
+	border:1px solid #d7d7d7;
+	.cut-off-date{
+		.cut-left{
+			font-family: $f2_regular;
+			font-size: 13px;
+			color: #676767;
+			text-transform: uppercase;
+		}
+		.cut-right{
+			color: #d00006;
+		}
+	}
+	.schedule-txt-box{
+		margin-top:10px;
+		.schedule-box-1{
+			float: left;			
+		}	
+		.schedule-box-2{
+			float: left;
+			margin-left: 20px;
+		}	
+		.cut-off-para{
+			border:1px solid #c0c0c0 ;
+			background-color:#fff;
+			padding:5px 10px;
+			width: 240px;
+			font-family: $f2_regular;
+			font-size: 13px;
+			color: #a0a0a0;
+		}
+	}
+	.cut-off-date-2{		
+		.rum-self-left{
+			float: left;
+			margin-top: 25px;
+		}
+		.rum-self-right{
+			float: left;
+			margin-top: 25px;
+			margin-left: 205px;
+		}
+		.cut-left{
+			font-family: $f2_regular;
+			font-size: 13px;
+			color: #676767;
+			text-transform: uppercase;
+		}
+		.cut-right{
+			color: #d00006;
+		}
+	}
+}
+.dropdownlist{
+	margin-top: 15px;	
+	.dropdown-1{
+		float: left;		
+	}
+	.dropdown-2{
+		float: left;
+		margin-left: 15px;
+	}
+	.dropdown-selected{
+		.select2-container {
+			width:242px !important;
+			@media(max-width: 1024px){
+				width: 220px !important;
+			}
+			@media(max-width: 992px){
+				width: 100% !important;
+			}
+			.select2-selection{
+				background: #ffffff;
+				border: 0;
+				height: 43px;
+				border-radius: 0;
+				.select2-selection__rendered{
+					padding:7px 10px;
+				}						
+				.select2-selection__arrow{
+					display: none;
+				}	
+			}
+		}
+	}
+	.sailing-schedule-submit{
+		float: left;
+		margin-left: 15px;
+		a{
+			display: inline-block;
+			color: #ffffff;
+			font-size: 13px;
+			font-family:$f2_regular;
+			padding: 12px 15px;				
+			text-transform: uppercase;
+			background-color:#ed9205;
+			text-align: center;						
+			position: relative;
+			overflow: hidden;
+			z-index: 1;					
+			&:hover{
+				&:before{
+					left: 0;
+				}
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 100%;					
+				width: 100%;
+				height: 100%;
+				background: $logo_bg;
+				z-index: -1;
+				@include p-web(transition, all 0.5s);
+			}
+		}
+	}
+}
+.saling-schedule-message{
+	font-family:$f2_regular;
+	font-size: 13px;
+	color:#ed9205;
+	margin-top: 10px;
+}

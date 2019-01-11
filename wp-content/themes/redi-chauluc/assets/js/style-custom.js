@@ -55,4 +55,7 @@ jQuery(document).ready(function($){
 		}		
 	});
 	$('.smlightbox').simpleLightbox();
+	$('.selected2').select2({
+		theme: "classic"
+	});
 });
