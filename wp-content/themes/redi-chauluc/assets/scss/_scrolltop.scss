@@ -7,14 +7,14 @@
  z-index:999;
  a {
    font-size: 25px;
-   color: #141414;
+   color: #ffffff;
    background-color: $logo_bg;
    padding: 0px 11px 1px 11px;
    display: block;
    border-radius: 18px;
    @include p-web(transition,all 0.5s);
    &:hover{
-    background-color: darken($logo_bg,10%);
+    background-color: darken(#ed9205,10%);
    }
  }
 }

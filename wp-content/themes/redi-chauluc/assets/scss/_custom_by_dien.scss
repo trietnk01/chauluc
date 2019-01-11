@@ -150,12 +150,24 @@
 					color: #fff;
 					text-transform: uppercase;
 					text-align: center;
+					@media(max-width: 992px){
+						font-size: 30px;
+					}
+					@media(max-width: 576px){
+						font-size: 20px;
+					}
+					@media(max-width: 360px){
+						display: none;
+					}					
 				}
 				.slogan-excerpt{
 					font-family: $f3_regular;
 					font-size: 16px;
 					color: #fff;
 					text-align: center;
+					@media(max-width: 360px){
+						display: none;
+					}
 				}
 			}		
 		}
@@ -294,6 +306,9 @@
 		margin-top: 0px;
 		margin-right: 15px;
 		outline: none;
+		.navbar-toggler-icon{
+			background-image: url("../img/nav-line.png");
+		}
 	}
 	.box_logo_mobile{
 		width: 100px;
@@ -332,4 +347,24 @@
 			}
 		}		
 	}
+}
+.who-we-are-title{
+	font-family: $f2_bold;
+	font-size: 24px;
+	color: #303030;
+	text-transform: uppercase;
+	position:relative;
+	padding-bottom: 20px;
+	margin-top: 50px;
+	&:before{
+		position:absolute;
+		content: '';
+		border-top:2px solid #ed9205;
+		bottom: 0;
+		left: 0;
+		width: 100px;
+	}
+}
+.who-we-are-excerpt{
+	margin-top: 20px;
 }

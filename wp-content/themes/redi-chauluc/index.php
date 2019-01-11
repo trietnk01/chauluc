@@ -34,7 +34,12 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-5"></div>
+			<div class="col-lg-5">
+				<h2 class="who-we-are-title">Who we are</h2>
+				<div class="who-we-are-excerpt">
+					We, Chau Luc Co., Ltd., were established by the end of 1999 while the whole Asian region had not overcome the financial crisis yet, we have recognised that all the challenges we were facing with could be only settled if we could provide the best services to the customers’ satisfaction. 
+				</div>
+			</div>
 			<div class="col-lg-7"></div>
 		</div>
 	</div>
