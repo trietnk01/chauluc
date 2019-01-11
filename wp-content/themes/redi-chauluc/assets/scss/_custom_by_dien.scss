@@ -1,6 +1,9 @@
 .header{
 	background-color: #f9f9f9;	
 	border-bottom:1px solid #ececec ;
+	@media(max-width: 992px){
+		display: none;
+	}
 	.social-lst{
 		float: left;
 		list-style: none;
@@ -94,51 +97,6 @@
 		}
 	}
 }
-.header-menu{
-	@media(max-width: 992px){
-		display: none;
-	}
-	.logo{
-		float: left;
-		margin-top: 15px;
-	}
-	.ddsmoothmenu{
-		float: left;
-		width: auto;
-		margin-left: 90px;
-		margin-top: 25px;
-		@media(max-width: 1024px){
-			margin-left: 0px;
-		}
-		>ul{
-			>li{
-				&:last-child{
-					background-image:url('../img/account-icon.png');
-					background-repeat:no-repeat;
-					display: block;
-					background-position:10px 10px;
-					padding-left:5px;
-					@media(max-width: 1024px){
-						background-position:0px 15px;
-						padding-left:10px;
-					}
-				}
-			}
-		}			
-	}
-	.search-box{
-		float: left;
-		margin-left: 10px;
-		margin-top:30px;
-		@media(max-width: 1024px){
-			margin-left: 5px;
-			margin-top: 35px;
-		}
-		a{
-			color: #000000;
-		}
-	}
-}
 .banner_slideshow{
 	position:relative;
 	margin-top: 15px;
@@ -202,10 +160,176 @@
 			}		
 		}
 	}	
+}	
+.header-menu{
+	@media(max-width: 992px){
+		display: none;
+	}
+	.logo{
+		float: left;
+		margin-top: 15px;
+	}
+	.ddsmoothmenu{  
+		float: left;
+		width: auto;
+		margin-left:80px;
+		margin-top: 25px;
+		background:none;
+		@media(max-width: 1024px){
+			margin-left: 0px;
+		}
+		ul{
+			li{
+				ul{
+					li{
+						a{ 
+							font-family:$f_regular;
+							font-size: 14px;
+							text-transform: uppercase;                            
+							&:link,&:visited{
+								color: #000;
+							}          
+						}
+					}
+				}
+			}    
+		}
+		>ul{    
+			>li{
+				&:last-child{
+					background-image:url('../img/account-icon.png');
+					background-repeat:no-repeat;
+					display: block;
+					background-position:10px 10px;
+					padding-left:5px;
+					@media(max-width: 1024px){
+						background-position:0px 15px;
+						padding-left:10px;
+					}
+				}
+				>a{
+					font-family: $f2_regular;
+					font-size: 14px;
+					text-transform: uppercase;               
+					background:transparent;                 
+					padding: 10px 10px;
+					border-right:1px solid #f2f2f2;         
+					&:link,&:visited{
+						color: #000;
+					}                     
+					&:hover,&.selected{            
+						color: #000;
+						background:none;
+					} 
+					@media (max-width: 1024px){
+						padding:15px 5px;  
+					}
+				}
+				&:last-child{
+					a{
+						border-right: 0;
+						padding:10px 0px 0px 25px;
+						@media(max-width: 1024px){
+							padding:15px 0px 0px 10px;
+						}
+					}
+				} 
+				&.current-menu-item{
+					>a{          
+						color: #000;
+					}
+				}   
+			}
+		}
+		>ul{
+			>li{      
+				>ul{
+					margin-top: 3px;
+					li{
+						a{
+							border-right: 1px solid darken(#fff,2%) ;
+							border-bottom: 1px solid darken(#fff,2%);
+							width: 220px;
+							padding: 6px 10px;   
+							font-family: $f_bold;                     
+							&:hover,&.selected{
+								background-color: $logo_bg !important;
+								color: $mau;            
+							}
+						}
+						&.current-menu-item{
+							a{
+								background-color: $logo_bg !important;                           
+							}
+						}   
+					}
+				}
+			}    
+		}  
+	}
+	.search-box{
+		float: left;
+		margin-left: 10px;
+		margin-top:30px;
+		@media(max-width: 1024px){
+			margin-left: 5px;
+			margin-top: 35px;
+		}
+		a{
+			color: #000000;
+		}
+	}
 }
-.bg-light{
+.navbar{
+	background:transparent !important; 
 	display: none;
+	position: relative;
+	padding: 20px 0;
 	@media(max-width: 992px){
 		display: block;
+	}
+	.navbar-toggler{
+		border:0;			
+		float: right;
+		margin-top: 0px;
+		margin-right: 15px;
+		outline: none;
+	}
+	.box_logo_mobile{
+		width: 100px;
+		position: absolute;
+		left: 50%;
+		top: 25px;
+		margin-left: -50px;		
+	}
+	.navbar-collapse{
+		padding-left:0px;
+		padding-right:0px;
+		>ul{
+			list-style: none;
+			padding-left:0px;
+			padding-right:0px;
+			margin-bottom: 0;
+			border-top:1px solid #2e2dff;						
+			border-bottom:1px solid #2e2dff;
+			margin-top: 10px;
+			>li{
+				background-color:#0100cb;
+				>a{
+					display: block;
+					padding: 5px 10px;
+					border-bottom: 1px solid #2e2dff;
+					color: #fff;
+					&:hover{
+						background-color:#0100ff;
+					}
+				}
+				&:last-child{
+					a{
+						border-bottom:0;
+					}
+				}
+			}
+		}		
 	}
 }
