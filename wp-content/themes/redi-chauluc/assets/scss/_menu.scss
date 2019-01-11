@@ -1,4 +1,5 @@
 .ddsmoothmenu{  
+  background:none;
   ul{
     li{
       ul{
@@ -6,10 +7,9 @@
           a{ 
             font-family:$f_regular;
             font-size: 14px;
-            text-transform: uppercase;                
-            background-color: $menu_bg;
+            text-transform: uppercase;                            
             &:link,&:visited{
-              color: #fff;
+              color: #000;
             }          
           }
         }
@@ -19,18 +19,18 @@
   >ul{    
     >li{
       >a{
-        font-family:$f_bold;
-        font-size: 14px;
+        font-family: $f2_regular;
+          font-size: 14px;
         text-transform: uppercase;               
         background:transparent;                 
-        padding: 18px 20px; 
-        border-right: 1px solid #909090; 
+        padding: 20px 10px;
+        border-right:0;         
         &:link,&:visited{
-          color: $menu_color;
+          color: #000;
         }                     
-        &:hover,&.selected{  
-          background-color: $logo_bg !important;                  
-          color: #3c3c3c;
+        &:hover,&.selected{            
+          color: #000;
+          background:none;
         } 
         @media (max-width: 1024px){
           padding: 15px 20px;  
@@ -42,9 +42,8 @@
         }
       } 
       &.current-menu-item{
-        >a{
-          background-color: $logo_bg !important;                  
-          color: $menu_color_hover_active;
+        >a{          
+          color: #000;
         }
       }   
     }

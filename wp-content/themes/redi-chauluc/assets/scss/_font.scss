@@ -38,5 +38,15 @@
 	font-family: 'OpenSans-Bold' ;
 	src: url( '../font/Open_Sans/OpenSans-Bold.ttf' ) format('truetype');	 
 }
-$f_regular:'K2D-Regular';
-$f_bold:'K2D-Bold';
+@font-face {
+	font-family: 'Roboto-Regular' ;
+	src: url( '../font/Roboto/Roboto-Regular.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'Roboto-Bold' ;
+	src: url( '../font/Roboto/Roboto-Bold.ttf' ) format('truetype');	 
+}
+$f_regular:'OpenSans-Regular';
+$f_bold:'OpenSans-Bold';
+$f2_regular:'Roboto-Regular';
+$f2_bold:'Roboto-Bold';
