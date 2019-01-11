@@ -109,4 +109,27 @@
 			</div>
 		</div>
 	</div>	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="box_logo_mobile">
+			<a href="<?php echo home_url() ?>" title="Logo">					
+				<img src="<?php echo get_field('logo_header','option'); ?>" alt="Logo" >
+			</a>
+		</div>		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="clr"></div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul>
+				<li><a href="javascript:void(0);">Homepage</a></li>
+				<li><a href="javascript:void(0);">Service</a></li>
+				<li><a href="javascript:void(0);">Quotation</a></li>
+				<li><a href="javascript:void(0);">E-Commerce</a></li>
+				<li><a href="javascript:void(0);">Network</a></li>
+				<li><a href="javascript:void(0);">Contact us</a></li>
+				<li><a href="javascript:void(0);">News & Event</a></li>
+				<li><a href="javascript:void(0);">Login</a></li>							
+			</ul>			
+		</div>		
+	</nav>	
 	<?php do_action('p_after_header') ; ?>
