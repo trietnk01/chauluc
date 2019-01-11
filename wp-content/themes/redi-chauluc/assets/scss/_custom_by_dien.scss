@@ -372,6 +372,9 @@
 	padding:20px;
 	background-color:#f6f6f6;
 	border:1px solid #d7d7d7;
+	background-image:url('../img/chau-luc.png');
+	background-repeat:no-repeat;
+	background-size:cover;
 	.cut-off-date{
 		.cut-left{
 			font-family: $f2_regular;
@@ -494,4 +497,27 @@
 	font-size: 13px;
 	color:#ed9205;
 	margin-top: 10px;
+}
+.service-bg{
+	margin-top: 20px;
+	padding-top:45px;
+	padding-bottom:45px;
+	background-image:url('../img/chau-luc.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+	.service-title{
+		font-family: $f2_bold;
+		font-size: 24px;
+		color: #303030;
+		text-transform: uppercase;
+		text-align: center;
+		background-color:#f0f0f0;				
+	}
+	.service-line-title{
+		width: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		border-top:2px solid #ed9205;
+		margin-top: 20px;		
+	}
 }

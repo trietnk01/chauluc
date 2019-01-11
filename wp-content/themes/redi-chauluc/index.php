@@ -96,6 +96,18 @@
 			</div>
 		</div>
 	</div>
+	<div class="service-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col">					
+					<h2 class="service-title">
+						Services
+					</h2>
+					<div class="service-line-title"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<?php		
 	get_footer();
 	?>
