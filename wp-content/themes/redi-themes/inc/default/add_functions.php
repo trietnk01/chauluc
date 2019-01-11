@@ -888,6 +888,7 @@ function portfolio_page_template( $template ) {
 /* start add footer */
 add_action('wp_footer', 'script_footer');
 function script_footer(){
+	$fb_app_id=get_field('op_fb_app_id','option');
 	$facebook="
 
 <div id=\"fb-root\"></div>
@@ -895,7 +896,7 @@ function script_footer(){
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=1994326743991661&autoLogAppEvents=1';
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=".$fb_app_id."&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -911,7 +912,7 @@ function script_footer(){
 		 <a href='javascript:void(0);' onclick='closeFrmSearch();'><i class=\"fa fa-times\" aria-hidden=\"true\"></i></a>
 		</div>
 		<form class='frmsearcharticle' name='frm_search_article' method='GET'>
-			<div class='vatimkiem'><input value='' name='s' type='search' placeholder='Tìm kiếm' class='txt_search'></div>
+			<div class='vatimkiem'><input value='' name='s' type='search' placeholder='Tìm kiếm' class='txt_search' autocomplete='off'></div>
 			<div class='btnsearch'>
 				<a href='javascript:void(0);' onclick='document.forms[\"frm_search_article\"].submit();'><img src='".P_IMG."/search-w.svg"."' /></a>
 			</div>
