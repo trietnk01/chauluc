@@ -103,14 +103,14 @@
 		float: left;
 		width: auto;
 		margin-left: 105px;
-		margin-top: 10px;
+		margin-top: 25px;
 		>ul{
 			>li{
 				&:last-child{
 					background-image:url('../img/account-icon.png');
 					background-repeat:no-repeat;
 					display: block;
-					background-position:10px 21px;
+					background-position:10px 10px;
 					padding-left:20px;
 				}
 			}
@@ -119,9 +119,71 @@
 	.search-box{
 		float: left;
 		margin-left: 10px;
-		margin-top:25px;
+		margin-top:30px;
 		a{
 			color: #000000;
 		}
+	}
+}
+.banner_slideshow{
+	position:relative;
+	margin-top: 15px;
+	.owl_carousel_banner{
+		.owl-dots {
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			width: 100%;
+			.owl-dot{
+				span{
+					width: 17px;
+					height: 7px;
+				}
+				&:hover{
+					span{
+						background: #ed9205;
+					}
+				}
+			} 
+			.owl-dot.active{
+				span{
+					background: #ed9205;
+				}
+			}   
+		}
+		.owl-theme {
+			.owl-nav{
+				margin-top: 0;
+			}
+			.owl-nav.disabled+.owl-dots{
+				margin-top: 0;
+			}
+		}	
+	} 
+	.slogan-banner{
+		position:absolute;
+		top :0;
+		left :0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		.slogan-ger{
+			.slogan-txt{
+				font-family: $f3_bold;
+				font-size: 48px;
+				color: #fff;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			.slogan-excerpt{
+				font-family: $f3_regular;
+				font-size: 16px;
+				color: #fff;
+				text-align: center;
+			}
+		}		
 	}
 }
