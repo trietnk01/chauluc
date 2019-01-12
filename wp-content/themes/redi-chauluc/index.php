@@ -9,7 +9,7 @@
 	?>
 	<h1 style="display: none;"><?php echo get_bloginfo( 'name'); ?></h1>
 	<div class="banner_slideshow">
-		<div class="owl_carousel_banner owl-carousel owl-theme owl-loaded">		
+		<div class="owl-carousel-banner owl-carousel owl-theme owl-loaded">		
 			<?php 
 			foreach ($source_banner as $key => $value) {
 				?>
@@ -104,6 +104,22 @@
 						Services
 					</h2>
 					<div class="service-line-title"></div>
+					<div class="service-box">
+						<div class="owl-carousel-service owl-carousel owl-theme owl-loaded">							
+						<?php 
+						$source_logo=get_field('op_hp_logo_rpt','option');
+						foreach ($source_logo as $key => $value) { 
+							?>
+							<div class="item">
+								<a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow">
+									<div style="background-image: url(<?php echo @$value['op_hp_logo_img']; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 197 / 93 ))"></div>
+								</a>
+							</div>
+							<?php
+						}						
+						?>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

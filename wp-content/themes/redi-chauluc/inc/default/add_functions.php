@@ -813,14 +813,24 @@ function p_re_home(){
 	header("location:" . home_url()  );
 	exit;
 }
-// start ajaxurl 
+// start header 
 add_action('wp_head', 'myplugin_ajaxurl');
 function myplugin_ajaxurl() {
-   echo '<script type="text/javascript">
+   $ajaxurl= '<script type="text/javascript">
            var ajaxurl = "' . admin_url('admin-ajax.php') . '";
          </script>';
+    $chuoi= '<script type="text/javascript" language="javascript">	
+	ddsmoothmenu.init({
+			mainmenuid: "smoothmainmenu", 
+			orientation: "h", 
+			classname: "ddsmoothmenu",
+			contentsource: "markup" 
+		});	
+	</script>';	
+	echo @$ajaxurl;			
+	echo @$chuoi;
 }
-// end add ajaxurl
+// end header
 // start datetime
 function datetimeConverter($date,$format_to){
 	$result="";
@@ -856,22 +866,6 @@ function getPaging($queryObj = null){
 	}
 }
 // end paging
-// start ddsmoothmenu
-add_action('wp_head', 'add_code_ddsmoothmenu');
-function add_code_ddsmoothmenu(){			
-	$chuoi= '	
-	<script type="text/javascript" language="javascript">	
-	ddsmoothmenu.init({
-			mainmenuid: "smoothmainmenu", 
-			orientation: "h", 
-			classname: "ddsmoothmenu",
-			contentsource: "markup" 
-		});	
-	</script>
-	    ';				
-	echo $chuoi;
-}
-// end ddsmoothmenu
 /* begin template include */
 add_filter( 'template_include', 'portfolio_page_template');
 function portfolio_page_template( $template ) {
