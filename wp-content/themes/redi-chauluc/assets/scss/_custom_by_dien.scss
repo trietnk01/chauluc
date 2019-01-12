@@ -100,7 +100,7 @@
 .banner_slideshow{
 	position:relative;
 	margin-top: 15px;
-	.owl_carousel_banner{
+	.owl-carousel-banner{
 		.owl-dots {
 			position: absolute;
 			bottom: 20px;
@@ -521,6 +521,74 @@
 		margin-top: 20px;		
 	}
 	.service-box{
-		margin-top: 40px;
+		margin-top: 45px;
+		.owl-carousel-service{
+			.service-item{
+				
+				padding:45px 40px;
+				a{
+					display: block;
+					div{
+						transform: rotate(45deg);
+					}
+				}
+			}
+			.owl-prev{
+				position: absolute;
+				left: -70px;
+				top: 125px;
+				background-color: transparent !important;					
+			}	
+			.owl-next{
+				position: absolute;
+				right: -70px;
+				top: 125px;
+				background-color: transparent !important;					
+			}
+			.owl-nav{
+				[class*=owl-]{
+					margin: 0;
+					color: #5d5d5d;
+					border: 1px solid #d3d3d3;
+					padding: 3px 9px;
+					border-radius: 14px;
+					@include p-web(transition,all 900ms);
+					&:hover{
+						color:#fff;	
+						background-color: #e8a61b !important;
+						border:1px solid #e8a61b;
+					}
+				}	
+			} 
+			.service-item-title{
+				text-align: center;
+				margin-top: 70px;
+				a{
+					font-family: $f2_bold;
+					font-size: 15px;
+					color: #000;
+					text-transform: uppercase;														
+				}				
+			}
+		} 
+	}
+}
+.content-bottom{
+	margin-top: 40px;
+	.content-bottom-title{
+		font-family: $f2_bold;
+		font-size: 24px;
+		color: #000;
+		text-transform: uppercase;
+		position: relative;
+		padding-bottom: 20px;
+		&:before{
+			content: '';
+			position:absolute;
+			bottom:0;
+			left: 0;
+			width:75px;
+			border-top:2px solid #ed9205;
+		}
 	}
 }

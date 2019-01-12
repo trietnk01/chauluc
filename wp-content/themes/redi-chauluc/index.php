@@ -106,22 +106,34 @@
 					<div class="service-line-title"></div>
 					<div class="service-box">
 						<div class="owl-carousel-service owl-carousel owl-theme owl-loaded">							
-						<?php 
-						$source_logo=get_field('op_hp_logo_rpt','option');
-						foreach ($source_logo as $key => $value) { 
+							<?php 						
+							for ($i=0;$i<13;$i++) { 
+								?>
+								<div class="item">
+									<div class="service-item">
+										<a href="<?php echo P_IMG.'/bg-'.$i.'.jpg'; ?>" class="smlightbox" title="tiêu đề tên" target="_blank" rel="nofollow">
+											<div style="background-image: url(<?php echo P_IMG.'/bg-'.$i.'.jpg'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 10 / 10 ))"></div>
+										</a>
+										<h3 class="service-item-title"><a href="javascript:void(0);">Industrial Broker</a></h3>
+									</div>								
+								</div>
+								<?php
+							}						
 							?>
-							<div class="item">
-								<a href="javascript:void(0);" title="tiêu đề tên" target="_blank" rel="nofollow">
-									<div style="background-image: url(<?php echo @$value['op_hp_logo_img']; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 197 / 93 ))"></div>
-								</a>
-							</div>
-							<?php
-						}						
-						?>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="content-bottom">
+					<h3 class="content-bottom-title">Video Clip</h3>
+				</div>				
+			</div>
+			<div class="col-lg-6"></div>
 		</div>
 	</div>
 	<?php		
