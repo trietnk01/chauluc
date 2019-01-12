@@ -131,6 +131,17 @@
 			<div class="col-lg-6">
 				<div class="content-bottom">
 					<h3 class="content-bottom-title">Video Clip</h3>
+					<div class="content-bottom-video">
+						<a href="javascript:void(0);">
+							<div style="background-image: url(<?php echo P_IMG.'/video.png'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 570 / 323 ))"></div>
+							<div class="video-opacity">								
+							</div>			
+							<div class="youtube-play-box">
+								<div class="youtube-icon">									
+								</div>
+							</div>				
+						</a>
+					</div>
 				</div>				
 			</div>
 			<div class="col-lg-6"></div>
