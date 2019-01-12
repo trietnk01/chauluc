@@ -132,7 +132,7 @@
 				<div class="content-bottom">
 					<h3 class="content-bottom-title">Video Clip</h3>
 					<div class="content-bottom-video">
-						<a href="javascript:void(0);">
+						<a href="javascript:void(0);" class="js-modal-btn" data-video-id="RPWasgGJsK8">
 							<div style="background-image: url(<?php echo P_IMG.'/video.png'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 570 / 323 ))"></div>
 							<div class="video-opacity">								
 							</div>			
@@ -144,7 +144,28 @@
 					</div>
 				</div>				
 			</div>
-			<div class="col-lg-6"></div>
+			<div class="col-lg-6">
+				<div class="content-bottom">
+					<h3 class="content-bottom-title">Download</h3>
+					<div>
+						<div class="brochure-box">
+							<div style="background-image: url(<?php echo P_IMG.'/bg-0.jpg'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 270 / 320 ))"></div>
+							<div class="brochure-title">
+								<div><img src="<?php echo P_IMG.'/pdf-icon.png'; ?>"></div>
+								<div class="brochure-link"><a href="javascript:void(0);">Download brochure</a></div>							
+							</div>
+						</div>
+						<div class="quotation-box">	
+							<div style="background-image: url(<?php echo P_IMG.'/bg-0.jpg'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 270 / 320 ))"></div>
+							<div class="brochure-title">
+								<div><img src="<?php echo P_IMG.'/dollars-icon.png'; ?>"></div>
+								<div class="brochure-link"><a href="javascript:void(0);">Quotation online</a></div>							
+							</div>					
+						</div>
+						<div class="clr"></div>
+					</div>					
+				</div>				
+			</div>
 		</div>
 	</div>
 	<?php		

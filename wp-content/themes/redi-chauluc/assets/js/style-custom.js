@@ -58,4 +58,5 @@ jQuery(document).ready(function($){
 	$('.selected2').select2({
 		theme: "classic"
 	});
+	$(".js-modal-btn").modalVideo();
 });

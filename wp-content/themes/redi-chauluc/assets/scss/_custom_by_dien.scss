@@ -624,4 +624,59 @@
 			}
 		}
 	}
+	.brochure-box{
+		float: left;
+		position:relative;
+		width: 250px;
+		height: 305px;
+		margin-top: 30px;
+		.brochure-title{
+			position:absolute;
+			bottom:0;
+			left: 0;
+			background-color:$logo_bg;
+			width: 100%;
+			padding:20px 5px;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			.brochure-link{
+				a{
+					font-family: $f2_bold;
+					font-size: 17px;
+					color: #fff;
+					text-transform: uppercase;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+	.quotation-box{
+		float: left;
+		position:relative;
+		width: 250px;
+		height: 305px;
+		margin-top: 30px;
+		margin-left: 30px;
+		.brochure-title{
+			position:absolute;
+			bottom:0;
+			left: 0;
+			background-color:#ed9205;
+			width: 100%;
+			padding:20px 5px;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			.brochure-link{
+				a{
+					font-family: $f2_bold;
+					font-size: 17px;
+					color: #fff;
+					text-transform: uppercase;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
 }
