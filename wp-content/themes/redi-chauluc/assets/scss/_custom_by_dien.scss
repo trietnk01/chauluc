@@ -523,14 +523,13 @@
 	.service-box{
 		margin-top: 45px;
 		.owl-carousel-service{
-			.service-item{
-				
+			.service-item{				
 				padding:45px 40px;
 				a{
-					display: block;
+					display: block;		
 					div{
-						transform: rotate(45deg);
-					}
+						transform: rotate(45deg);						
+					}			
 				}
 			}
 			.owl-prev{
@@ -635,11 +634,21 @@
 			bottom:0;
 			left: 0;
 			background-color:$logo_bg;
-			width: 100%;
+			width: 95%;
 			padding:20px 5px;
 			display: flex;
 			justify-content: center;
-			align-items:center;
+			align-items:center;			
+			&:after{
+				content: '';
+				position: absolute;
+				right: -13px;
+				bottom: 0px;
+				border-left: 13px solid #0100ca;
+				border-bottom: 55px solid #0100ca;
+				border-top: 15px solid transparent;
+				border-right: 0px solid transparent;
+			}
 			.brochure-link{
 				a{
 					font-family: $f2_bold;
@@ -663,11 +672,21 @@
 			bottom:0;
 			left: 0;
 			background-color:#ed9205;
-			width: 100%;
+			width: 95%;
 			padding:20px 5px;
 			display: flex;
 			justify-content: center;
 			align-items:center;
+			&:after{
+				content: '';
+				position: absolute;
+				right: -13px;
+				bottom: 0px;
+				border-left: 13px solid #ED9205;
+				border-bottom: 55px solid #ED9205;
+				border-top: 15px solid transparent;
+				border-right: 0px solid transparent;
+			}
 			.brochure-link{
 				a{
 					font-family: $f2_bold;
