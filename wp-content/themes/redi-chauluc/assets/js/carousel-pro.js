@@ -27,10 +27,19 @@ jQuery(document).ready(function(){
         responsiveClass:true,
         responsive:{   
             0:{
-                items:1
-            },                                                         
+                items:1,
+            },
             740:{
-                items:3
+                items:2,
+                margin :10,
+            },                     
+            768:{
+                items:3,
+                margin :10,
+            },                                                        
+            1024:{
+                items:3,
+                margin : 60,
             }
         }
     });     

@@ -395,6 +395,10 @@
 		.schedule-box-2{
 			float: left;
 			margin-left: 20px;
+			@media(max-width: 240px){
+				margin-left: 0;
+				margin-top: 10px;
+			}
 		}	
 		.cut-off-para{
 			border:1px solid #c0c0c0 ;
@@ -404,6 +408,27 @@
 			font-family: $f2_regular;
 			font-size: 13px;
 			color: #a0a0a0;
+			@media(max-width: 1024px){
+				width: 230px;
+			}
+			@media(max-width: 740px){
+				width: 220px;
+			}
+			@media(max-width: 576px){
+				width: 160px;
+			}
+			@media(max-width: 375px){
+				width: 140px;
+			}
+			@media(max-width: 360px){
+				width: 130px;
+			}
+			@media(max-width: 320px){
+				width: 110px;
+			}
+			@media(max-width: 240px){
+				width: 100%;
+			}
 		}
 	}
 	.cut-off-date-2{		
@@ -415,6 +440,21 @@
 			float: left;
 			margin-top: 25px;
 			margin-left: 205px;
+			@media(max-width: 576px){
+				margin-left: 128px;
+			}
+			@media(max-width: 375px){
+				margin-left:110px;
+			}
+			@media(max-width: 360px){
+				margin-left:100px;
+			}
+			@media(max-width: 320px){
+				margin-left:80px;
+			}
+			@media(max-width: 240px){
+				margin-left:20px;
+			}
 		}
 		.cut-left{
 			font-family: $f2_regular;
@@ -435,15 +475,39 @@
 	.dropdown-2{
 		float: left;
 		margin-left: 15px;
+		@media(max-width: 1024px){
+			margin-left: 20px;
+		}
+		@media(max-width: 240px){
+			margin-left: 5px;
+		}
 	}
 	.dropdown-selected{
 		.select2-container {
 			width:242px !important;
 			@media(max-width: 1024px){
-				width: 220px !important;
+				width:230px !important;
 			}
 			@media(max-width: 992px){
-				width: 100% !important;
+				width:230px !important;
+			}
+			@media(max-width: 740px){
+				width:223px !important;
+			}
+			@media(max-width: 576px){
+				width:160px !important;
+			}
+			@media(max-width: 375px){
+				width:141px !important;
+			}
+			@media(max-width: 360px){
+				width:133px !important;
+			}
+			@media(max-width: 320px){
+				width:113px !important;
+			}
+			@media(max-width: 240px){
+				width:100% !important;
 			}
 			.select2-selection{
 				background: #ffffff;
@@ -462,6 +526,18 @@
 	.sailing-schedule-submit{
 		float: left;
 		margin-left: 15px;
+		@media(max-width: 1024px){
+			margin-left: 0;
+			margin-top: 20px;
+		}
+		@media(max-width: 992px){
+			margin-left: 20px;
+			margin-top: 0px;
+		}
+		@media(max-width: 740px){
+			margin-left: 0px;
+			margin-top: 20px;
+		}
 		a{
 			display: inline-block;
 			color: #ffffff;
@@ -498,6 +574,12 @@
 	font-size: 13px;
 	color:#ed9205;
 	margin-top: 10px;
+	@media(max-width: 320px){
+		font-size: 10px;
+	}
+	@media(max-width: 240px){
+		font-size: 8px;
+	}
 }
 .service-bg{
 	margin-top: 20px;
@@ -526,6 +608,15 @@
 		.owl-carousel-service{
 			.service-item{				
 				padding:45px 40px;
+				@media(max-width: 992px){
+					padding:45px 35px;
+				}
+				@media(max-width: 740px){
+					padding:45px 40px;
+				}
+				@media(max-width: 576px){
+					padding:50px 90px;
+				}
 				a{
 					display: block;		
 					div{
@@ -537,13 +628,77 @@
 				position: absolute;
 				left: -70px;
 				top: 125px;
-				background-color: transparent !important;					
+				background-color: transparent !important;	
+				@media(max-width: 1204px){
+					top: 125px;
+					left: -40px;
+				}
+				@media(max-width: 992px){
+					top: 107px;
+					left: -30px;
+				}
+				@media(max-width: 740px){
+					top: 115px;
+					left: -40px;
+				}
+				@media(max-width: 576px){
+					top: 138px;
+					left: 10px;
+				}
+				@media(max-width: 375px){
+					top: 120px;
+					left: 10px;
+				}
+				@media(max-width: 360px){
+					top: 112px;
+					left: 10px;
+				}	
+				@media(max-width: 320px){
+					top: 92px;
+					left: 10px;
+				}
+				@media(max-width: 240px){
+					top: 53px;
+					left: 10px;
+				}				
 			}	
 			.owl-next{
 				position: absolute;
 				right: -70px;
 				top: 125px;
-				background-color: transparent !important;					
+				background-color: transparent !important;	
+				@media(max-width: 1204px){
+					top: 125px;
+					right: -40px;
+				}	
+				@media(max-width: 992px){
+					top: 107px;
+					right: -30px;
+				}
+				@media(max-width: 740px){
+					top: 115px;
+					right: -40px;
+				}
+				@media(max-width: 576px){
+					top: 138px;
+					right: 10px;
+				}	
+				@media(max-width: 375px){
+					top: 120px;
+					right: 10px;
+				}	
+				@media(max-width: 360px){
+					top: 112px;
+					right: 10px;
+				}
+				@media(max-width: 320px){
+					top: 92px;
+					right: 10px;
+				}
+				@media(max-width: 240px){
+					top: 53px;
+					right: 10px;
+				}				
 			}
 			.owl-nav{
 				[class*=owl-]{
@@ -567,7 +722,10 @@
 					font-family: $f2_bold;
 					font-size: 15px;
 					color: #000;
-					text-transform: uppercase;														
+					text-transform: uppercase;			
+					@media(max-width: 320px){
+						font-size: 10px;
+					}											
 				}				
 			}
 		} 
@@ -630,6 +788,9 @@
 		width: 250px;
 		height: 305px;
 		margin-top: 30px;
+		@media(max-width: 1024px){
+			width: 200px;
+		}
 		.brochure-title{
 			position:absolute;
 			bottom:0;
@@ -668,6 +829,10 @@
 		height: 305px;
 		margin-top: 30px;
 		margin-left: 30px;
+		@media(max-width: 1024px){
+			width: 200px;
+			margin-left: 20px;
+		}
 		.brochure-title{
 			position:absolute;
 			bottom:0;
