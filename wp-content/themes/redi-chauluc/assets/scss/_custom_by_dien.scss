@@ -821,12 +821,14 @@
 			width: 40%;
 			.connect-us{	
 				.ken-us{
-					
+					float: right;
 				}			
 				.social-list{
 					list-style: none;
 					padding-left:0;
 					margin-bottom: 0;
+					float: right;
+					margin-left: 15px;
 					li{
 						float: left;
 						margin-left: 5px;
@@ -836,6 +838,14 @@
 					}
 				}
 			}
+			.copy-right{
+				text-align: right;
+				.chauluc-co-ltd{
+					a{
+						color: #4397f7;
+					}					
+				}				
+			}			
 		}
 	}
 }

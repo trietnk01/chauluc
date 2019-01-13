@@ -101,14 +101,17 @@ Footer template
 					</div>	
 					<div class="bottom-right">
 						<div class="connect-us">
-							<div class="ken-us">Connect Us</div>
 							<ul class="social-list">
 								<li><a href="javascript:void(0);" rel="nofollow"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
 								<li><a href="javascript:void(0);" rel="nofollow"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
 								<li><a href="javascript:void(0);" rel="nofollow"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 								<li><a href="javascript:void(0);" rel="nofollow"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
 							</ul>
+							<div class="ken-us">Connect Us</div>							
 							<div class="clr"></div>
+						</div>
+						<div class="copy-right">
+							Copyright &copy; 2018 <span class="chauluc-co-ltd"><a href="javascript:void(0);">Chau Luc Co.,Ltd. (CSC).</a></span> Design by <span class="chauluc-co-ltd"><a href="javascript:void(0);">Redi</a></span>
 						</div>
 					</div>
 					<div class="clr"></div>
