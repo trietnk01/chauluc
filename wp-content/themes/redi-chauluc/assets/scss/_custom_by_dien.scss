@@ -635,7 +635,7 @@
 				}
 				@media(max-width: 992px){
 					top: 107px;
-					left: -30px;
+					left:-35px;
 				}
 				@media(max-width: 740px){
 					top: 115px;
@@ -673,7 +673,7 @@
 				}	
 				@media(max-width: 992px){
 					top: 107px;
-					right: -30px;
+					right: -35px;
 				}
 				@media(max-width: 740px){
 					top: 115px;
@@ -782,6 +782,30 @@
 			}
 		}
 	}
+	.brochure-link{
+		a{
+			font-family: $f2_bold;
+			font-size: 17px;
+			color: #fff;
+			text-transform: uppercase;
+			margin-left: 15px;
+			@media(max-width: 1024px){
+				font-size: 12px;
+			}
+			@media(max-width: 375px){
+				font-size: 10px;
+			}
+			@media(max-width: 360px){
+				font-size: 9px;
+			}
+			@media(max-width: 320px){
+				font-size: 17px;
+			}
+			@media(max-width: 240px){
+				font-size: 12px;
+			}
+		}
+	}
 	.brochure-box{
 		float: left;
 		position:relative;
@@ -790,6 +814,20 @@
 		margin-top: 30px;
 		@media(max-width: 1024px){
 			width: 200px;
+			height: 255px;
+		}
+		@media(max-width: 576px){
+			width: 180px;
+			height: auto;
+		}
+		@media(max-width: 375px){
+			width: 160px;
+		}
+		@media(max-width: 360px){
+			width: 155px;
+		}
+		@media(max-width: 320px){
+			width: 100%;
 		}
 		.brochure-title{
 			position:absolute;
@@ -800,7 +838,14 @@
 			padding:20px 5px;
 			display: flex;
 			justify-content: center;
-			align-items:center;			
+			align-items:center;		
+			@media(max-width: 1024px){
+				width: 100%;
+				padding:10px 5px;
+			}
+			@media(max-width: 576px){
+				padding:10px 5px;
+			}			
 			&:after{
 				content: '';
 				position: absolute;
@@ -810,16 +855,10 @@
 				border-bottom: 55px solid #0100ca;
 				border-top: 15px solid transparent;
 				border-right: 0px solid transparent;
-			}
-			.brochure-link{
-				a{
-					font-family: $f2_bold;
-					font-size: 17px;
-					color: #fff;
-					text-transform: uppercase;
-					margin-left: 15px;
+				@media(max-width: 1024px){
+					display: none;
 				}
-			}
+			}			
 		}
 	}
 	.quotation-box{
@@ -832,6 +871,21 @@
 		@media(max-width: 1024px){
 			width: 200px;
 			margin-left: 20px;
+			height: 255px;
+		}
+		@media(max-width: 576px){
+			width: 180px;
+			height: auto;
+		}
+		@media(max-width: 375px){
+			width: 160px;
+		}
+		@media(max-width: 360px){
+			width: 155px;
+		}
+		@media(max-width: 320px){
+			width: 100%;
+			margin-left: 0;
 		}
 		.brochure-title{
 			position:absolute;
@@ -843,6 +897,13 @@
 			display: flex;
 			justify-content: center;
 			align-items:center;
+			@media(max-width: 1024px){
+				width: 100%;
+				padding:10px 5px;
+			}
+			@media(max-width: 576px){
+				padding:10px 5px;
+			}
 			&:after{
 				content: '';
 				position: absolute;
@@ -852,16 +913,10 @@
 				border-bottom: 55px solid #ED9205;
 				border-top: 15px solid transparent;
 				border-right: 0px solid transparent;
-			}
-			.brochure-link{
-				a{
-					font-family: $f2_bold;
-					font-size: 17px;
-					color: #fff;
-					text-transform: uppercase;
-					margin-left: 15px;
+				@media(max-width: 1024px){
+					display: none;
 				}
-			}
+			}			
 		}
 	}
 }
@@ -895,6 +950,9 @@
 		margin-top: 30px;
 		float: left;
 		margin-left:105px;
+		@media(max-width: 1024px){
+			margin-left: 30px;
+		}
 		.footer-title{
 			font-family:$f4_semi_bold;
 			font-size: 16px;			
@@ -927,6 +985,9 @@
 		margin-top: 30px;
 		float: left;
 		margin-left:45px;
+		@media(max-width: 1024px){
+			margin-left: 15px;
+		}
 		.footer-title{
 			font-family:$f4_semi_bold;
 			font-size: 16px;			
@@ -958,6 +1019,9 @@
 		margin-top: 40px;
 		.bottom-left{
 			float: left;
+			@media(max-width: 1024px){
+				float: none;
+			}
 			.footer-menu{
 				list-style: none;
 				padding-left:0;
@@ -985,9 +1049,17 @@
 		.bottom-right{
 			float: right;
 			width: 40%;
+			@media(max-width: 1024px){
+				float: none;
+				width: auto;
+			}
 			.connect-us{	
 				.ken-us{
 					float: right;
+					@media(max-width: 1024px){
+						float: none;
+						display: none;
+					}
 				}			
 				.social-list{
 					list-style: none;
@@ -995,6 +1067,10 @@
 					margin-bottom: 0;
 					float: right;
 					margin-left: 15px;
+					@media(max-width: 1024px){
+						float: none;
+						margin-left: 0;
+					}
 					li{
 						float: left;
 						margin-left: 5px;
@@ -1006,6 +1082,9 @@
 			}
 			.copy-right{
 				text-align: right;
+				@media(max-width: 1024px){
+					text-align: left;
+				}
 				.chauluc-co-ltd{
 					a{
 						color: #4397f7;
