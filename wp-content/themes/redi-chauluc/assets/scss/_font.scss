@@ -46,9 +46,24 @@
 	font-family: 'Roboto-Bold' ;
 	src: url( '../font/Roboto/Roboto-Bold.ttf' ) format('truetype');	 
 }
+@font-face {
+	font-family: 'Montserrat-Regular' ;
+	src: url( '../font/Montserrat/Montserrat-Regular.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'Montserrat-Bold' ;
+	src: url( '../font/Montserrat/Montserrat-Bold.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'Montserrat-SemiBold' ;
+	src: url( '../font/Montserrat/Montserrat-SemiBold.ttf' ) format('truetype');	 
+}
 $f_regular:'OpenSans-Regular';
 $f_bold:'OpenSans-Bold';
 $f2_regular:'Roboto-Regular';
 $f2_bold:'Roboto-Bold';
 $f3_regular:'K2D-Regular';
 $f3_bold:'K2D-Bold';
+$f4_regular:'Montserrat-Regular';
+$f4_bold:'Montserrat-Bold';
+$f4_semi_bold:'Montserrat-SemiBold';
