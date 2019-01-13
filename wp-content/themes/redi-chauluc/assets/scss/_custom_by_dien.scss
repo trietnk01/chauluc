@@ -934,6 +934,9 @@
 	.footer-col-1{
 		margin-top: 30px;
 		float: left;
+		@media(max-width: 992px){
+			float: none;
+		}
 		.footer-title{
 			font-family:$f4_semi_bold;
 			font-size: 16px;			
@@ -953,6 +956,10 @@
 		@media(max-width: 1024px){
 			margin-left: 30px;
 		}
+		@media(max-width: 992px){
+			float: none;
+			margin-left: 0;
+		}
 		.footer-title{
 			font-family:$f4_semi_bold;
 			font-size: 16px;			
@@ -963,10 +970,18 @@
 			.bf-left{
 				float: left;
 				width: 190px;
+				@media(max-width: 320px){
+					float: none;
+					width: auto;
+				}
 			}
 			.bf-right{
 				float: left;
-				margin-left: 15px;			
+				margin-left: 15px;	
+				@media(max-width: 320px){
+					float: none;
+					margin-left: 0;
+				}						
 			}
 		}
 		.business-forum{
@@ -974,10 +989,18 @@
 			.business-left{
 				float: left;
 				width: 190px;
+				@media(max-width: 320px){
+					float: none;
+					width: auto;
+				}
 			}
 			.business-right{
 				float: left;
 				margin-left: 15px;
+				@media(max-width: 320px){
+					float: none;
+					margin-left: 0;
+				}	
 			}
 		}
 	}	
@@ -987,6 +1010,10 @@
 		margin-left:45px;
 		@media(max-width: 1024px){
 			margin-left: 15px;
+		}
+		@media(max-width: 992px){
+			float: none;
+			margin-left: 0;
 		}
 		.footer-title{
 			font-family:$f4_semi_bold;
