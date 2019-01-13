@@ -501,7 +501,7 @@
 .service-bg{
 	margin-top: 20px;
 	padding-top:45px;
-	padding-bottom:45px;
+	padding-bottom:5px;
 	background-image:url('../img/chau-luc.png');
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -760,11 +760,82 @@
 	.footer-col-3{
 		margin-top: 30px;
 		float: left;
-		margin-left:105px;
+		margin-left:45px;
 		.footer-title{
 			font-family:$f4_semi_bold;
 			font-size: 16px;			
 			text-transform: uppercase;
+		}
+		.member-partner-box{
+			margin-top: 20px;
+			.member-row{
+				&:last-child{
+					margin-top: 10px;
+				}
+				.parter-item{
+					float: left;
+					margin-left: 10px;
+					width: 60px;
+					div{
+						border-radius:5px;
+					}					
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		border-top:1px solid #3d3e40;
+		padding: 20px 0;
+		margin-top: 40px;
+		.bottom-left{
+			float: left;
+			.footer-menu{
+				list-style: none;
+				padding-left:0;
+				margin-bottom: 0;
+				li{
+					float: left;
+					border-right: 1px solid #fff;
+					padding-left: 5px;
+					padding-right: 5px;
+					&:first-child{
+						padding-left:0;
+					}
+					&:last-child{
+						border-right:0;
+					}
+					a{
+						text-transform: uppercase;
+					}
+				}
+			}
+			.chauluc-transport{
+				margin-top: 5px;
+			}
+		}
+		.bottom-right{
+			float: right;
+			width: 40%;
+			.connect-us{	
+				.ken-us{
+					
+				}			
+				.social-list{
+					list-style: none;
+					padding-left:0;
+					margin-bottom: 0;
+					li{
+						float: left;
+						margin-left: 5px;
+						&:first-child{
+							margin-left:0;
+						}
+					}
+				}
+			}
 		}
 	}
 }
