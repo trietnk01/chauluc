@@ -79,38 +79,10 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 			<div class="ecommerce-schedule-banner" style="background-image: url(<?php echo P_IMG.'/ecommerce-schedule.jpg'; ?>);"></div>
 		</div>
 		<div class="col-lg-3 col-md-4">
-			<h2 class="single-title3">Categories</h2>
-			<ul class="categories">
-				<li><a href="javascript:void(0);">Schedule</a></li>
-				<li><a href="javascript:void(0);">Booking online</a></li>
-				<li><a href="javascript:void(0);">Shipping Instruction</a></li>
-				<li><a href="javascript:void(0);">Tracking</a></li>
-				<li><a href="javascript:void(0);">Soa</a></li>
-				<li><a href="javascript:void(0);">Invoice</a></li>			
-			</ul>
-			<form class="your-account-box" method="POST">
-				<h3 class="account-box-title">Manage your account</h3>
-				<div class="account-box-txt">
-					<input type="text" name="username" placeholder="Username" autocomplete="off">
-				</div>
-				<div class="account-box-txt">
-					<input type="text" name="password" placeholder="Password" autocomplete="off">
-				</div>
-				<div class="forgot-password">
-					<a href="javascript:void(0);">Forgot password ?</a>
-				</div>
-				<div class="box-login">
-					<a href="javascript:void(0);">Login</a>
-				</div>
-				<div class="why-register">Why register</div>
-				<div class="instance-access-to">Instant access to:</div>
-				<div class="instance-access-to">- Air & Ocean rate</div>
-				<div class="instance-access-to">- Cargo management & notification</div>
-				<div class="instance-access-to">- Reporting tools</div>
-				<div class="box-register">
-					<a href="javascript:void(0);">Register</a>
-				</div>
-			</form>
+			<?php include get_template_directory() . '/block/block-categories.php'; ?>	
+			<div class="account-margin-top">
+				<?php include get_template_directory().'/block/block-manage-account.php'; ?>				
+			</div>			
 		</div>
 	</div>
 </div>
