@@ -41,58 +41,75 @@
 				</div>
 			</div>
 			<div class="col-lg-7">
-				<form class="saling-schedule" name="frm" method="POST">
-					<div class="cut-off-date">
-						<span class="cut-left">Cut of date</span> <span class="cut-right">*</span>
+				<div class="product-tab">
+					<div class="tab">
+						<button class="tablinks h-title" onclick="openCity(event, 'saling-schedules')">Saling Schedules</button>
+						<button class="tablinks h-title" onclick="openCity(event, 'track-a-shipment')">Track a shipment</button>
+						<button class="tablinks h-title" onclick="openCity(event, 'find-a-rate')">Find a rate</button>               		
 					</div>
-					<div class="schedule-txt-box">
-						<div class="schedule-box-1">
-							<input type="text" name="cut_off_txt_1" class="cut-off-para" placeholder="05/10/2018">
+					<div>
+						<div id="saling-schedules" class="tabcontent">
+							<form class="saling-schedule" name="frm" method="POST">
+								<div class="cut-off-date">
+									<span class="cut-left">Cut of date</span> <span class="cut-right">*</span>
+								</div>
+								<div class="schedule-txt-box">
+									<div class="schedule-box-1">
+										<input type="text" name="cut_off_txt_1" class="cut-off-para" placeholder="05/10/2018">
+									</div>
+									<div class="schedule-box-2">
+										<input type="text" name="cut_off_txt_2" class="cut-off-para" placeholder="05/10/2018">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="cut-off-date-2">
+									<div class="rum-self-left">
+										<span class="cut-left">Origin</span> <span class="cut-right">*</span>
+									</div>
+									<div class="rum-self-right">
+										<span class="cut-left">Destination</span> <span class="cut-right">*</span>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="dropdownlist">
+									<div class="dropdown-1 dropdown-selected">
+										<select class="selected2">
+											<option>Origin 1</option>
+											<option>Origin 2</option>
+											<option>Origin 3</option>
+											<option>Origin 4</option>
+											<option>Origin 5</option>
+											<option>Origin 6</option>
+										</select>
+									</div>
+									<div class="dropdown-2 dropdown-selected">
+										<select class="selected2">
+											<option>Origin 1</option>
+											<option>Origin 2</option>
+											<option>Origin 3</option>
+											<option>Origin 4</option>
+											<option>Origin 5</option>
+											<option>Origin 6</option>
+										</select>
+									</div>
+									<div class="sailing-schedule-submit">
+										<a href="javascript:void(0);">Submit</a>
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="saling-schedule-message">
+									Download or subscribe to sailing schedules
+								</div>
+							</form>
 						</div>
-						<div class="schedule-box-2">
-							<input type="text" name="cut_off_txt_2" class="cut-off-para" placeholder="05/10/2018">
-						</div>
-						<div class="clr"></div>
-					</div>
-					<div class="cut-off-date-2">
-						<div class="rum-self-left">
-							<span class="cut-left">Origin</span> <span class="cut-right">*</span>
-						</div>
-						<div class="rum-self-right">
-							<span class="cut-left">Destination</span> <span class="cut-right">*</span>
-						</div>
-						<div class="clr"></div>
-					</div>
-					<div class="dropdownlist">
-						<div class="dropdown-1 dropdown-selected">
-							<select class="selected2">
-								<option>Origin 1</option>
-								<option>Origin 2</option>
-								<option>Origin 3</option>
-								<option>Origin 4</option>
-								<option>Origin 5</option>
-								<option>Origin 6</option>
-							</select>
-						</div>
-						<div class="dropdown-2 dropdown-selected">
-							<select class="selected2">
-								<option>Origin 1</option>
-								<option>Origin 2</option>
-								<option>Origin 3</option>
-								<option>Origin 4</option>
-								<option>Origin 5</option>
-								<option>Origin 6</option>
-							</select>
-						</div>
-						<div class="sailing-schedule-submit">
-							<a href="javascript:void(0);">Submit</a>
-						</div>
-						<div class="clr"></div>
-					</div>
-					<div class="saling-schedule-message">
-						Download or subscribe to sailing schedules
-					</div>
-				</form>
+						<div id="track-a-shipment" class="tabcontent" style="display: none;">
+							Track a shipment
+						</div>        
+						<div id="find-a-rate" class="tabcontent"  style="display: none;">
+							Find a rate
+						</div>  
+					</div>														                                            
+				</div> 				
 			</div>
 		</div>
 	</div>
