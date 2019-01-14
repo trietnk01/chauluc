@@ -1254,45 +1254,45 @@
 	}
 	@media(max-width: 320px){
 		padding:45px 15px 30px 15px;
-	}
-	.quotation-row{
-		margin-bottom: 5px;
-		input{
-			border: 1px solid #c6c6c6;
-			width: 100%;
-			padding: 10px 10px;
-		}		
-	}
-	.quotation-submit{
-		margin-top: 30px;
-		text-align: center;
-		a{
-			font-family: $f2_regular;
-			font-size: 14px;
-			display: inline-block;
-			background: #ed9205;
-			padding: 10px 55px;
-			color: #ffffff;
-			text-transform: uppercase;
-			position: relative;
-			overflow: hidden;
-			z-index: 1;	
-			&:hover{
-				&:before{
-					left: 0;
-				}
-			}
+	}	
+}
+.quotation-row{
+	margin-bottom: 5px;
+	input{
+		border: 1px solid #c6c6c6;
+		width: 100%;
+		padding: 10px 10px;
+	}		
+}
+.quotation-submit{
+	margin-top: 30px;
+	text-align: center;
+	a{
+		font-family: $f2_regular;
+		font-size: 14px;
+		display: inline-block;
+		background: #ed9205;
+		padding: 10px 55px;
+		color: #ffffff;
+		text-transform: uppercase;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;	
+		&:hover{
 			&:before{
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 100%;					
-				width: 100%;
-				height: 100%;
-				background: $logo_bg;
-				z-index: -1;
-				@include p-web(transition, all 0.5s);
+				left: 0;
 			}
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 100%;					
+			width: 100%;
+			height: 100%;
+			background: $logo_bg;
+			z-index: -1;
+			@include p-web(transition, all 0.5s);
 		}
 	}
 }
@@ -1542,12 +1542,34 @@
 }
 .blue-booking-box{
 	background-color:$logo_bg;
-	padding:10px;
-	.blue-boxbooking-left{
+	padding: 10px;
+	float: left;
+	border-radius: 10px;
+	.blue-box-booking-left{
 		float: left;
+		width: 28px;
+		margin-top: 10px;
+		.blue-box-booking-icon{
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
 	}
-	.blue-boxbooking-right{
+	.blue-box-booking-right{
 		float: left;
 		margin-left: 5px;
+		.blue-box-booking-title{
+			font-family: $f_bold;
+			font-size:20px;
+			color: #ffffff;
+			text-transform: uppercase;
+		}
+		.blue-box-booking-slogan{
+			font-family: $f_regular;
+			font-size:12px;
+			color: #ffffff;			
+		}
 	}
+}
+.phaba{
+	margin-top: 15px;
 }
