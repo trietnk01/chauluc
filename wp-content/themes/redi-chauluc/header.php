@@ -132,7 +132,29 @@
 		</button>
 		<div class="clr"></div>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul>
+			<?php			
+						$args = array( 
+							'menu'              => '', 
+							'container'         => '', 
+							'container_class'   => '', 
+							'container_id'      => '', 
+							'menu_class'        => 'main-menu-mobiel',                             
+							'echo'              => true, 
+							'fallback_cb'       => 'wp_page_menu', 
+							'before'            => '', 
+							'after'             => '', 
+							'link_before'       => '', 
+							'link_after'        => '', 
+							'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',  
+							'depth'             => 3, 
+							'walker'            => '', 
+							'theme_location'    => 'mobile' ,
+							'menu_li_actived'       => 'current-menu-item',
+							'menu_item_has_children'=> 'menu-item-has-children',
+						);
+						wp_nav_menu($args);
+						?>        		
+			<!--<ul>
 				<li><a href="javascript:void(0);">Homepage</a></li>
 				<li><a href="javascript:void(0);">Service</a></li>
 				<li><a href="javascript:void(0);">Quotation</a></li>
@@ -141,7 +163,7 @@
 				<li><a href="javascript:void(0);">Contact us</a></li>
 				<li><a href="javascript:void(0);">News & Event</a></li>
 				<li><a href="javascript:void(0);">Login</a></li>							
-			</ul>			
+			</ul>-->			
 		</div>		
 	</nav>	
 	<?php do_action('p_after_header') ; ?>
