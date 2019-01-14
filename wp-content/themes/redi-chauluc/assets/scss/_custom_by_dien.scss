@@ -1540,3 +1540,14 @@
 		}
 	}
 }
+.blue-booking-box{
+	background-color:$logo_bg;
+	padding:10px;
+	.blue-boxbooking-left{
+		float: left;
+	}
+	.blue-boxbooking-right{
+		float: left;
+		margin-left: 5px;
+	}
+}
