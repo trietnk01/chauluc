@@ -111,10 +111,10 @@
 								?>
 								<div class="item">
 									<div class="service-item">
-										<a href="<?php echo P_IMG.'/bg-'.$i.'.jpg'; ?>" class="smlightbox" title="tiêu đề tên" target="_blank" rel="nofollow">
+										<a href="<?php echo site_url( 'service-detail', null ); ?>" class="smlightbox" title="tiêu đề tên" >
 											<div style="background-image: url(<?php echo P_IMG.'/bg-'.$i.'.jpg'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 10 / 10 ))"></div>
 										</a>
-										<h3 class="service-item-title"><a href="javascript:void(0);">Industrial Broker</a></h3>
+										<h3 class="service-item-title"><a href="<?php echo site_url( 'service-detail', null ); ?>">Industrial Broker</a></h3>
 									</div>								
 								</div>
 								<?php
