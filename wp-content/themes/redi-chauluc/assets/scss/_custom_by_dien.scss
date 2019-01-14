@@ -1163,6 +1163,23 @@
 		margin-left: -40px;		
 	}
 }
+.single-title3{
+	font-family: $f2_bold;
+	font-size: 24px;
+	color: #000;		
+	margin-top: 25px;
+	position:relative;
+	padding-bottom:20px;
+	margin-bottom: 15px;
+	&:before{
+		content: '';
+		position:absolute;
+		width: 80px;
+		border-top:2px solid #ed9205;
+		bottom:0;
+		left: 0;
+	}
+}
 .service-item2{	
 	padding:55px 95px;	
 	@media(max-width: 1024px){
@@ -1274,4 +1291,53 @@
 			}
 		}
 	}
+}
+.schedule-box{
+	background-color:#f2f2f2;
+	border:1px solid #c9c9c9;	
+	padding : 25px 35px 25px 35px;
+	font-family: $f_regular;
+	font-size:15px;	
+	.schedule-frm{
+		margin-top: 30px;
+		.vessel-schedule{
+			float: left;
+		}
+		.flight-schedule{
+			float: left;
+			margin-left: 35px;
+		}
+		.vessel-checked{
+			text-transform: uppercase;
+		}
+		.port{			
+			.port-left{
+				margin-top: 30px;
+				float: left;	
+			}
+			.port-right{
+				margin-top: 30px;
+				float: left;
+				margin-left: 30px;
+			}
+			.origin{
+				margin-top: 10px;
+				.select2-container {
+					width:242px !important;					
+					.select2-selection{
+						background: #ffffff;
+						border: 0;
+						height: 43px;
+						border-radius: 0;
+						.select2-selection__rendered{
+							padding:7px 10px;
+						}						
+						.select2-selection__arrow{
+							display: none;
+						}	
+					}
+				}
+			}
+		}
+	}	
 }
