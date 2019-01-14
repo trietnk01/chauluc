@@ -10,7 +10,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 <h1 style="display: none;"><?php echo get_bloginfo( 'name','' ); ?></h1>
 <div class="container">
 	<div class="row">
-		<div class="col-lg-9">
+		<div class="col-lg-9 col-md-8">
 			<h2 class="single-title3">Schedule</h2>
 			<div class="schedule-box">
 				<div class="schedule-slogan">Continue to remain and increase direct consol box service weekly from Hochiminh-Haiphong-Danang-to/via 2 main port Hongkong & Singapore. Further, Everich has opened weekly direct route to these port…</div>
@@ -78,7 +78,7 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 			</div>
 			<div class="ecommerce-schedule-banner" style="background-image: url(<?php echo P_IMG.'/ecommerce-schedule.jpg'; ?>);"></div>
 		</div>
-		<div class="col-lg-3">
+		<div class="col-lg-3 col-md-4">
 			<h2 class="single-title3">Categories</h2>
 			<ul class="categories">
 				<li><a href="javascript:void(0);">Schedule</a></li>

@@ -1307,9 +1307,18 @@
 		.flight-schedule{
 			float: left;
 			margin-left: 35px;
+			@media(max-width: 576px){
+				margin-left: 10px;
+			}
+			@media(max-width: 375px){
+				margin-left: 0;
+			}
 		}
 		.vessel-checked{
 			text-transform: uppercase;
+			@media(max-width: 240px){
+				font-size: 10px;
+			}
 		}
 		.port{			
 			.port-left{
@@ -1320,11 +1329,29 @@
 				margin-top: 30px;
 				float: left;
 				margin-left: 30px;
+				@media(max-width: 360px){
+					margin-left: 0;
+				}
 			}
 			.origin{
 				margin-top: 10px;
 				.select2-container {
-					width:242px !important;					
+					width:242px !important;		
+					@media(max-width: 992px){
+						width:158px !important;		
+					}		
+					@media(max-width: 576px){
+						width:140px !important;		
+					}	
+					@media(max-width: 375px){
+						width:120px !important;
+					}
+					@media(max-width: 360px){
+						width:100% !important;
+					}
+					@media(max-width: 240px){
+						width:70% !important;
+					}
 					.select2-selection{
 						background: #ffffff;
 						border: 0;
@@ -1351,6 +1378,9 @@
 				overflow: hidden;
 				z-index: 1;	
 				color: #ffffff;
+				@media(max-width: 240px){
+					padding:10px 40px;
+				}
 				&:hover{
 					&:before{
 						left: 0;
@@ -1408,6 +1438,7 @@
 	font-family: $f2_regular;
 	font-size: 14px;	
 	color: #ffffff;
+	margin-top: 45px;
 	a{
 		font-family: $f2_regular;
 		font-size: 14px;	
