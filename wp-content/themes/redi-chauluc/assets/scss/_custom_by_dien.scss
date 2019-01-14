@@ -1335,7 +1335,7 @@
 				@media(max-width: 360px){
 					margin-left: 0;
 				}
-			}
+			}			
 			.origin{
 				margin-top: 10px;
 				.select2-container {
@@ -1572,4 +1572,53 @@
 }
 .phaba{
 	margin-top: 15px;
+	.linhba-selected{				
+		.select2-container {
+			width:100% !important;					
+			.select2-selection{
+				background: #ffffff;
+				border: 0;
+				height: 43px;
+				border-radius: 0;
+				.select2-selection__rendered{
+					padding:7px 10px;
+				}						
+				.select2-selection__arrow{
+					display: none;
+				}	
+			}
+		}
+	}
 }
+.booking-online-submit{
+	margin-top: 45px;
+	a{
+		display: inline-block;
+		background: #ed9205;
+		text-transform: uppercase;
+		padding:10px 55px;
+		position: relative;				
+		overflow: hidden;
+		z-index: 1;	
+		color: #ffffff;
+		@media(max-width: 240px){
+			padding:10px 40px;
+		}
+		&:hover{
+			&:before{
+				left: 0;
+			}
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 100%;					
+			width: 100%;
+			height: 100%;
+			background: $logo_bg;
+			z-index: -1;
+			@include p-web(transition, all 0.5s);
+		}
+	}
+}		

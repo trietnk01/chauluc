@@ -97,8 +97,35 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 					<input type="text" name="company_volumn_cbm" placeholder="Volumn/Cbm">
 				</div>
 				<div class="quotation-row phaba">
+					<div class="linhba-selected">
+						<select class="selected2">
+							<option>Please select origin first</option>
+							<option>Origin 2</option>
+							<option>Origin 3</option>
+							<option>Origin 4</option>
+							<option>Origin 5</option>
+							<option>Origin 6</option>
+						</select>
+					</div>					
+				</div>
+				<div class="quotation-row phaba">
 					<input type="text" name="company_qty" placeholder="Quantity">
 				</div>	
+				<div class="quotation-row phaba">
+					<div class="linhba-selected">
+						<select class="selected2">
+							<option>Please select origin first</option>
+							<option>Origin 2</option>
+							<option>Origin 3</option>
+							<option>Origin 4</option>
+							<option>Origin 5</option>
+							<option>Origin 6</option>
+						</select>
+					</div>		
+				</div>
+				<div class="booking-online-submit">
+					<a href="javascript:void(0);">Submit</a>
+				</div>
 			</form>		
 		</div>
 		<div class="col-lg-3 col-md-4">
