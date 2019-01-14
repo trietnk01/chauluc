@@ -1701,10 +1701,7 @@
 			border-radius: 6px;
 			position: relative;				
 			overflow: hidden;
-			z-index: 1;			
-			@media(max-width: 240px){
-				padding:10px 40px;
-			}
+			z-index: 1;						
 			&:hover{
 				&:before{
 					left: 0;
@@ -1733,10 +1730,7 @@
 			border-radius: 6px;
 			position: relative;				
 			overflow: hidden;
-			z-index: 1;			
-			@media(max-width: 240px){
-				padding:10px 40px;
-			}
+			z-index: 1;						
 			&:hover{
 				&:before{
 					left: 0;
@@ -1797,5 +1791,28 @@
 		width: 100%;
 		padding: 10px 10px;
 		outline: 0;
+		@media(max-width: 576px){
+			margin-top: 5px;
+		}
 	}
+}
+.shipping-instruction-selected{				
+	.select2-container {
+		width:100% !important;					
+		.select2-selection{
+			background: #ffffff;
+			border: 0;
+			height: 43px;
+			border-radius: 0;
+			.select2-selection__rendered{
+				padding:7px 10px;
+			}						
+			.select2-selection__arrow{
+				display: none;
+			}	
+		}
+	}
+}
+.sabara{
+	width: 100%;
 }

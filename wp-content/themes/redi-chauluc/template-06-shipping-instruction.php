@@ -20,176 +20,207 @@ $productModel=$zController->getModel("/frontend","ProductModel");
 					</div>
 					<div>
 						<div id="sea-freight" class="tabcontent">
-							<div class="transparent-booking-box">
-								<div class="blue-box-booking-left">
-									<div class="blue-box-booking-icon" style="background-image: url(<?php echo P_IMG.'/shipper-blue.png'; ?>);padding-top: calc(100% / (35/35))"></div>
+							<form class="sea-freight-frm">
+								<div class="transparent-booking-box">
+									<div class="blue-box-booking-left">
+										<div class="blue-box-booking-icon" style="background-image: url(<?php echo P_IMG.'/shipper-blue.png'; ?>);padding-top: calc(100% / (35/35))"></div>
+									</div>
+									<div class="blue-box-booking-right">
+										<div class="blue-box-booking-title">Shipper</div>
+										<div class="blue-box-booking-slogan">Shipper Information</div>									
+									</div>
+									<div class="clr"></div>					
 								</div>
-								<div class="blue-box-booking-right">
-									<div class="blue-box-booking-title">Shipper</div>
-									<div class="blue-box-booking-slogan">Shipper Information</div>									
+								<div class="clr"></div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Name" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Tel / Fax" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
 								</div>
-								<div class="clr"></div>					
-							</div>
-							<div class="clr"></div>
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>
-							<div class="transparent-booking-box">
-								<div class="blue-box-booking-left">
-									<div class="blue-box-booking-icon" style="background-image: url(<?php echo P_IMG.'/consignee.png'; ?>);padding-top: calc(100% / (35/35))"></div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Address" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Email" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
 								</div>
-								<div class="blue-box-booking-right blue-transparent-booking">
-									<div class="blue-box-booking-title">Consignee</div>													
+								<div class="transparent-booking-box">
+									<div class="blue-box-booking-left">
+										<div class="blue-box-booking-icon" style="background-image: url(<?php echo P_IMG.'/consignee.png'; ?>);padding-top: calc(100% / (35/35))"></div>
+									</div>
+									<div class="blue-box-booking-right blue-transparent-booking">
+										<div class="blue-box-booking-title">Consignee</div>													
+									</div>
+									<div class="clr"></div>					
 								</div>
-								<div class="clr"></div>					
-							</div>
-							<div class="clr"></div>
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
+								<div class="clr"></div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Name" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Tel / Fax" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>		
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Address" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Email" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>	
+								<div class="transparent-booking-box">
+									<div class="blue-box-booking-left">
+										<div class="blue-box-booking-icon" style="background-image: url(<?php echo P_IMG.'/notify-party.png'; ?>);padding-top: calc(100% / (35/35))"></div>
 									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
+									<div class="blue-box-booking-right blue-transparent-booking">
+										<div class="blue-box-booking-title">Notify party</div>													
 									</div>
-								</div>								
-							</div>		
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>	
-							<div class="transparent-booking-box">
-								<div class="blue-box-booking-left">
-									<div class="blue-box-booking-icon" style="background-image: url(<?php echo P_IMG.'/notify-party.png'; ?>);padding-top: calc(100% / (35/35))"></div>
+									<div class="clr"></div>					
 								</div>
-								<div class="blue-box-booking-right blue-transparent-booking">
-									<div class="blue-box-booking-title">Notify party</div>													
+								<div class="shipping-instruction-booking-add">
+									<a href="javascript:void(0)" ><i class="fa fa-plus" aria-hidden="true"></i></a>
 								</div>
-								<div class="clr"></div>					
-							</div>
-							<div class="shipping-instruction-booking-add">
-								<a href="javascript:void(0)" ><i class="fa fa-plus" aria-hidden="true"></i></a>
-							</div>
-							<div class="clr"></div>	
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>	
-							<div class="instruction-line"></div>
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>		
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>	
-							<div class="instruction-line"></div>	
-							<div class="shipping-instruction-booking-add2">
-								<a href="javascript:void(0)" ><i class="fa fa-plus" aria-hidden="true"></i></a>
-							</div>
-							<div class="clr"></div>	
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>		
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>		
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>		
-							<div class="instruction-shipment">
-								<div class="row">
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-									<div class="col-sm-6">
-										<input type="text" name="company_name" placeholder="Company name" autocomplete="off" class="instruction-row">
-									</div>
-								</div>								
-							</div>		
+								<div class="clr"></div>	
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Name" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Tel / Fax" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Address" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Email" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>	
+								<div class="instruction-line"></div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Vessel" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Voy No" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Place of receipt" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Port of loading" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>		
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Port of discharge" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Place of delivery" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>	
+								<div class="instruction-line"></div>	
+								<div class="shipping-instruction-booking-add2">
+									<a href="javascript:void(0)" ><i class="fa fa-plus" aria-hidden="true"></i></a>
+								</div>
+								<div class="clr"></div>	
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Container number" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Seal number" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>		
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Size / Type" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Number of package" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>		
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="shipping-instruction-selected">
+												<select class="selected2">
+													<option>Unit</option>
+													<option>Origin 2</option>
+													<option>Origin 3</option>
+													<option>Origin 4</option>
+													<option>Origin 5</option>
+													<option>Origin 6</option>
+												</select>
+											</div>			
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Net Weight KGS (Without Tare)" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Gross Weight KGS (Without Tare)" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Measurement Cbm" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>		
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="HS Code" autocomplete="off" class="instruction-row">
+										</div>
+										<div class="col-sm-6">
+											<input type="text" name="company_name" placeholder="Shipping mark" autocomplete="off" class="instruction-row">
+										</div>
+									</div>								
+								</div>
+								<div class="instruction-shipment">
+									<div class="row">
+										<div class="col-lg-12">
+											<textarea rows="10"  placeholder="Description of goods" class="sabara"></textarea>
+										</div>									
+									</div>								
+								</div>	
+								<div class="booking-online-submit">
+									<a href="javascript:void(0);">Submit</a>
+								</div>					
+							</form>												
 						</div>
 						<div id="air-freight" class="tabcontent" style="display: none;">
 							Air freight
