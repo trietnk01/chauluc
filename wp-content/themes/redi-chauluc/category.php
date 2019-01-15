@@ -51,20 +51,25 @@ get_header();
 			$k=1;
 			for ($i=0; $i < 3; $i++) { 
 				?>
-				<div class="news-event-hw-box">
-					<div class="news-event-img">
-						<a href="javascript:void(0)">
-							<figure><div style="background-image: url(<?php echo P_IMG.'/news-event-'.$k.'.png'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / (370/285))" ></div></figure>
-						</a>	
-					</div>
-					<div class="news-event-info">
-						<h3 class="news-event-title"><a href="javascript:void(0);">Say Aloha to Hawai</a></h3>
-						<div class="news-event-date-post">October 31, 2018</div>
-						<div class="news-event-excerpt">
-							Famous Pacific Shipping (NZ) is enhancing its intra-Pacifi c Islands freight connections with the launch of a regular direct oceanfreight consolidation
+				<div class="news-event-hw-box2">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="news-event-img">
+								<a href="javascript:void(0)">
+									<figure><div style="background-image: url(<?php echo P_IMG.'/news-event-'.$k.'.png'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / (370/285))" ></div></figure>
+								</a>	
+							</div>
 						</div>
-					</div>
-					<div class="clr"></div>
+						<div class="col-lg-8">
+							<div class="news-event-info">
+								<h3 class="news-event-title"><a href="javascript:void(0);">Say Aloha to Hawai</a></h3>
+								<div class="news-event-date-post">October 31, 2018</div>
+								<div class="news-event-excerpt">
+									Famous Pacific Shipping (NZ) is enhancing its intra-Pacifi c Islands freight connections with the launch of a regular direct oceanfreight consolidation
+								</div>
+							</div>
+						</div>
+					</div>					
 				</div>
 				<?php
 				$k++;
@@ -75,7 +80,21 @@ get_header();
 			<?php include get_template_directory() . '/block/block-categories.php'; ?>	
 			<div class="account-margin-top">
 				<?php include get_template_directory().'/block/block-manage-account.php'; ?>				
-			</div>			
+			</div>	
+			<div class="news-event-quotation-online-box">
+				<div style="background-image: url(<?php echo P_IMG.'/bg-0.jpg'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 270 / 320 ))"></div>
+				<div class="news-event-brochure-brochure-title">
+					<div><img src="<?php echo P_IMG.'/dollars-icon.png'; ?>"></div>
+					<div class="news-event-brochure-brochure-link"><a href="javascript:void(0);">Quotation online</a></div>							
+				</div>
+			</div>
+			<div class="news-event-brochure-box">
+				<div style="background-image: url(<?php echo P_IMG.'/bg-0.jpg'; ?>);background-repeat: no-repeat;background-size: cover;padding-top: calc(100% / ( 270 / 320 ))"></div>
+				<div class="news-event-brochure-brochure-title">
+					<div><img src="<?php echo P_IMG.'/pdf-icon.png'; ?>"></div>
+					<div class="news-event-brochure-brochure-link"><a href="javascript:void(0);">Download brochure</a></div>							
+				</div>
+			</div>		
 		</div>
 	</div>
 </div>
