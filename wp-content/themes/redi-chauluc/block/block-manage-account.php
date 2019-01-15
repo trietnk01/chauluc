@@ -18,6 +18,6 @@
 	<div class="instance-access-to">- Cargo management & notification</div>
 	<div class="instance-access-to">- Reporting tools</div>
 	<div class="box-register">
-		<a href="javascript:void(0);">Register</a>
+		<a href="<?php echo site_url( 'register', null ); ?>">Register</a>
 	</div>
 </form>

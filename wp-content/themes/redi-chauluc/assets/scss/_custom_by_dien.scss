@@ -1531,105 +1531,105 @@
 	}
 }
 .account-margin-top{
-	margin-top: 40px;
-	.your-account-box{
-		background:$logo_bg;
-		padding:30px 20px 30px 20px;
-		border-radius:10px;
+	margin-top: 40px;	
+}
+.your-account-box{
+	background:$logo_bg;
+	padding:30px 20px 30px 20px;
+	border-radius:10px;
+	font-family: $f2_regular;
+	font-size: 14px;	
+	color: #ffffff;	
+	a{
 		font-family: $f2_regular;
 		font-size: 14px;	
-		color: #ffffff;	
+		color: #ffffff;
+	}
+	.account-box-title{
+		font-family: $f2_bold;
+		font-size:18px;
+		color: #ffffff;
+		text-transform: uppercase;
+		border-bottom:1px solid #fff;
+		padding-bottom: 10px;
+	}
+	.account-box-txt{
+		margin-top: 10px;
+		input{
+			width: 100%;
+			padding:10px;
+			border:0;
+			background-color:#ffffff;
+			outline: 0;
+		}
+	}
+	.forgot-password{
+		margin-top: 20px;
+	}
+	.box-login{
+		margin-top: 5px;
 		a{
-			font-family: $f2_regular;
-			font-size: 14px;	
-			color: #ffffff;
-		}
-		.account-box-title{
-			font-family: $f2_bold;
-			font-size:18px;
-			color: #ffffff;
+			display: block;
+			background: #ed9205;
 			text-transform: uppercase;
-			border-bottom:1px solid #fff;
-			padding-bottom: 10px;
-		}
-		.account-box-txt{
-			margin-top: 10px;
-			input{
+			padding:10px 55px;
+			color: #ffffff;
+			text-align: center;
+			position: relative;				
+			overflow: hidden;
+			z-index: 1;				
+			&:hover{
+				&:before{
+					left: 0;
+				}
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 100%;					
 				width: 100%;
-				padding:10px;
-				border:0;
-				background-color:#ffffff;
-				outline: 0;
+				height: 100%;
+				background: #0060ff;
+				z-index: -1;
+				@include p-web(transition, all 0.5s);
 			}
 		}
-		.forgot-password{
-			margin-top: 20px;
-		}
-		.box-login{
-			margin-top: 5px;
-			a{
-				display: block;
+	}
+	.why-register{
+		text-transform: uppercase;
+		margin-top:5px;
+	}
+	.instance-access-to{
+		margin-top: 5px;
+	}
+	.box-register{
+		margin-top: 5px;
+		a{
+			font-size: 15px;
+			color: #ffffff;
+			text-align: center;
+			display: block;
+			border:1px solid #ffffff;
+			padding:5px 10px;
+			position: relative;				
+			overflow: hidden;
+			z-index: 1;				
+			&:hover{
+				&:before{
+					left: 0;
+				}
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 100%;					
+				width: 100%;
+				height: 100%;
 				background: #ed9205;
-				text-transform: uppercase;
-				padding:10px 55px;
-				color: #ffffff;
-				text-align: center;
-				position: relative;				
-				overflow: hidden;
-				z-index: 1;				
-				&:hover{
-					&:before{
-						left: 0;
-					}
-				}
-				&:before{
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 100%;					
-					width: 100%;
-					height: 100%;
-					background: #0060ff;
-					z-index: -1;
-					@include p-web(transition, all 0.5s);
-				}
-			}
-		}
-		.why-register{
-			text-transform: uppercase;
-			margin-top:5px;
-		}
-		.instance-access-to{
-			margin-top: 5px;
-		}
-		.box-register{
-			margin-top: 5px;
-			a{
-				font-size: 15px;
-				color: #ffffff;
-				text-align: center;
-				display: block;
-				border:1px solid #ffffff;
-				padding:5px 10px;
-				position: relative;				
-				overflow: hidden;
-				z-index: 1;				
-				&:hover{
-					&:before{
-						left: 0;
-					}
-				}
-				&:before{
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 100%;					
-					width: 100%;
-					height: 100%;
-					background: #ed9205;
-					z-index: -1;
-					@include p-web(transition, all 0.5s);
-				}
+				z-index: -1;
+				@include p-web(transition, all 0.5s);
 			}
 		}
 	}
@@ -1662,6 +1662,14 @@
 			font-size:12px;
 			color: #ffffff;			
 		}
+	}
+}
+.login-box{
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	@media(max-width: 360px){
+		width: 100%;
 	}
 }
 .phaba{
@@ -2254,4 +2262,152 @@
 			}
 		}			
 	}
+}
+.single-box{
+	.news-event-date-post{
+		font-size: 13px;
+		color: #8d8d8d;
+		margin-top: 5px;
+	}	
+	.news-event-excerpt{
+		font-family: $f_bold;
+		font-size: 14px;		
+		color: #404040;
+		margin-top: 10px;		
+	}
+	.news-event-content{
+		margin-top: 40px;
+	}
+	.fb-developer-comment{
+		margin-top: 30px;
+	}
+	.related-article{
+		font-family:$f2_bold;
+		font-size: 24px;
+		text-transform: uppercase;		
+		margin-bottom: 25px;
+		margin-top: 20px;
+	}
+}
+.rapidshare{
+	margin-top: 25px;
+	.facebook_button{
+		margin-left: 0px;
+		float: left;
+	}
+	.facebook_like_button{
+		margin-left: 10px;
+		float: left;
+	}
+	.category_twitter_sg{
+		margin-top: 2px;
+		margin-left: 10px;
+		float: left;
+		@media(max-width: 1024px){
+			margin-left: 5px;
+		}
+	}
+	.category_linkedin_sg{
+		margin-top:2px;
+		margin-left: 10px;
+		float: left;
+		@media(max-width: 1024px){
+			margin-left: 5px;
+		}
+	}
+	.category_g_plus_sg{			
+		margin-left: 10px;
+		float: left;
+		@media(max-width: 1024px){
+			margin-left: 5px;
+		}
+	}
+}
+.related-article-box{
+	@media(max-width: 992px){
+		margin-bottom: 30px;
+	}
+	.related-article-img{
+		float: left;
+		width: 170px;
+		@media(max-width: 576px){
+			width: auto;
+			float: none;
+		}
+	}
+	.related-article-info{
+		float: left;
+		margin-left: 10px;
+		width: 210px;
+		@media(max-width: 1024px){
+			margin-left: 0px;
+		}
+		@media(max-width: 992px){
+			margin-left: 10px;
+			width: 270px;
+		}
+		@media(max-width: 740px){
+			width: 320px;
+			margin-left: 20px;
+		}
+		@media(max-width: 576px){
+			width: auto;
+			float: none;
+			margin-left: 0;
+		}
+		.related-article-title{
+			a{
+				font-family: $f2_bold;
+				font-size: 15px;
+				color: #000000;
+				text-transform: uppercase;
+			}	
+		}
+		.related-article-date-post{
+			font-size: 13px;
+			color: #8d8d8d;
+		}
+		.related-article-excerpt{
+			color: #5f5f5f;
+			margin-top: 5px;
+		}
+	}
+}
+.box-main-register{
+	margin-top: 5px;
+	a{
+		font-size: 15px;
+		color: #ffffff;
+		text-align: center;
+		display: block;
+		border:1px solid #ffffff;
+		padding:5px 10px;
+		background-color: #ed9205;
+		position: relative;				
+		overflow: hidden;
+		z-index: 1;				
+		&:hover{
+			&:before{
+				left: 0;
+			}
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 100%;					
+			width: 100%;
+			height: 100%;
+			background:$logo_bg;
+			z-index: -1;
+			@include p-web(transition, all 0.5s);
+		}
+	}
+}
+.page-img{
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-top:(100% / (370 / 410));
+	margin-bottom: 20px;
+	border-radius:10px;
 }
