@@ -1292,8 +1292,26 @@
 		padding:45px 15px 30px 15px;
 	}	
 }
+.contact-box{
+	background-color:#f2f2f2;
+	border:1px solid #c6c6c6;
+	padding:45px 45px 30px 45px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;		
+}
 .quotation-row{
 	margin-bottom: 5px;
+	outline: 0;
+	input{
+		border: 1px solid #c6c6c6;
+		width: 100%;
+		padding: 10px 10px;
+	}		
+}
+.contact-us-row{
+	margin-bottom: 5px;
+	outline: 0;
 	input{
 		border: 1px solid #c6c6c6;
 		width: 100%;
@@ -1922,6 +1940,23 @@
 			background: #ed9205;
 			z-index: -1;
 			@include p-web(transition, all 0.5s);
+		}
+	}
+}
+.contact-us-selected{	
+	.select2-container {
+		width:100% !important;				
+		.select2-selection{
+			background: #ffffff;
+			border: 0;
+			height: 43px;
+			border-radius: 0;
+			.select2-selection__rendered{
+				padding:7px 10px;
+			}						
+			.select2-selection__arrow{
+				display: none;
+			}	
 		}
 	}
 }
