@@ -1298,7 +1298,38 @@
 	padding:45px 45px 30px 45px;
 	width: 100%;
 	margin-left: auto;
-	margin-right: auto;		
+	margin-right: auto;	
+	@media(max-width: 320px){
+		padding:25px 25px 10px 25px;
+	}
+	.capcha{
+		margin-bottom: 20px;
+		margin-top: 20px;
+		.capcha-left{
+			float: left;
+			width: 190px;
+			@media(max-width: 740px){
+				width: 160px;
+			}
+			@media(max-width: 240px){
+				width: 120px;
+			}
+		}
+		.capcha-right{
+			float: left;
+			a{
+				display: block;
+				padding:5px 10px;
+				@media(max-width: 740px){
+					padding:2px 10px;
+				}
+				@media(max-width: 240px){
+					padding:0 10px;
+				}
+				background-color:#f8f8f8;
+			}			
+		}
+	}	
 }
 .quotation-row{
 	margin-bottom: 5px;
@@ -1307,15 +1338,17 @@
 		border: 1px solid #c6c6c6;
 		width: 100%;
 		padding: 10px 10px;
+		outline: 0;
 	}		
 }
 .contact-us-row{
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	outline: 0;
 	input{
 		border: 1px solid #c6c6c6;
 		width: 100%;
 		padding: 10px 10px;
+		outline: 0;
 	}		
 }
 .quotation-submit{
@@ -1959,4 +1992,54 @@
 			}	
 		}
 	}
+}
+.everich-handling-office{
+	margin-bottom: 20px;
+}
+.contact-us-textarea{
+	width: 100%;
+	height: 322px;	
+	@media(max-width: 740px){
+		height:309px;
+	}
+}
+.contactus-submit{	
+	text-align: right;
+	margin-top: 20px;
+	a{
+		font-family: $f2_regular;
+		font-size: 14px;
+		display: inline-block;
+		background:#ed9205 ;
+		padding: 10px 55px;
+		color: #ffffff;
+		text-transform: uppercase;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;	
+		@media(max-width: 740px){
+			padding: 10px 15px;
+		}
+		&:hover{
+			&:before{
+				left: 0;
+			}
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 100%;					
+			width: 100%;
+			height: 100%;
+			background:$logo_bg ;
+			z-index: -1;
+			@include p-web(transition, all 0.5s);
+		}
+	}
+}
+.loa-soa{
+	@media(max-width: 740px){
+		font-size:10px;
+	}	
 }
