@@ -657,10 +657,7 @@
 					padding:50px 90px;
 				}
 				a{
-					display: block;		
-					div{
-						transform: rotate(45deg);						
-					}			
+					display: block;								
 				}
 			}
 			.owl-prev{
@@ -1237,8 +1234,7 @@
 	}		
 	a{
 		display: block;		
-		.hw-service{
-			transform: rotate(45deg);				
+		.hw-service{					
 			background-repeat: no-repeat;
 			background-size: cover;
 			padding-top: calc(100% / ( 10 / 10 ));						
