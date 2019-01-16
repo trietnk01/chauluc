@@ -6,6 +6,7 @@ Template Post Type: post, page
 get_header();
 global $zController;
 $productModel=$zController->getModel("/frontend","ProductModel");
+global $acf_pr;
 ?>
 <div class="container">
 	<div class="row">
